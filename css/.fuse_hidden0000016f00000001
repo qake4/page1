@@ -1,0 +1,35 @@
+// mine functions
+
+//border radius
+	@mixin BorderRadius($value) {
+		-webkit-border-radius: $value;
+		-moz-border-radius: $value;
+		border-radius: $value;
+	}
+
+//gradient
+	@mixin Gradient($deg, $fromColor, $toColor) {
+		background: -webkit-linear-gradient($deg, $fromColor, $toColor); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient($deg, $fromColor, $toColor); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient($deg, $fromColor, $toColor); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient($deg, $fromColor, $toColor); /* Standard syntax */
+	}
+
+//Media Query Mixins
+	@mixin smallScreen {
+		@media only screen and (max-width: 480px) {
+			@content;
+		}
+	}
+
+	@mixin mediumScreen {
+		@media screen and (max-width: 805px) {
+			@content;
+		}
+	}
+
+	@mixin largeScreen {
+		@media screen and (min-width: 1024px) {
+			@content;
+		}
+	}

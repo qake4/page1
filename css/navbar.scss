@@ -1,0 +1,427 @@
+// SASS
+//imports
+	@import "mine.scss";
+
+/*--------------------------------
+             navbar
+--------------------------------*/
+
+$navBarBGColorDesktop: rgba(255,255,255,0);
+$navBarBGColorTablet: rgba(255,255,255,1);
+$navBarBGColorPhone: rgba(255,255,255,1);
+$trasparent: rgba(0,0,0,0);
+
+
+$navbarHeightD: 80px;
+$navbarHeightT: 80px;
+$navbarHeightP: 60px;
+
+$linkColor: #6abcd4;
+$linkColorHover: #1e2449;
+
+
+// logoszinek: #6abcd4	#00a3ce	#167fbc	#2c5996	#1e2449
+
+
+//modal
+	.modal-sm {
+		top: 100px;
+		width: 300px;
+		margin: 0 auto;
+	}
+
+/*--------------------------------
+             phone
+--------------------------------*/
+	@include phoneScreen {
+		.navbar {
+			background-color: white;
+			@include BorderRadius(0px);
+			width: 100%;
+			margin: 0;
+			position: fixed;
+			z-index: 500;
+			top: 0px;
+			height: $navbarHeightP;
+			@include Shadow(0,0,5px,0,#2c5996);
+		}
+
+
+		.logo-opener-container{
+			width: 100%;
+			position: relative;
+			z-index: 500;
+		}
+
+		.logo {
+			margin: 10px 0;
+			padding-left: 20px;
+			width: 50%;
+			height: 60px;
+			margin-top: -1px;
+			background-color: white;
+			text-align: left;
+			display: inline-block;
+			float: left;
+			z-index: 500;
+
+			img {
+				margin: 15px 0px;
+				width: 28px;
+				height: 28px;
+
+
+				@include RotateElement(45deg);
+			}
+		}
+		.navbar-opener-container {
+			width: 50%;
+			height: 60px;
+			margin: 0;
+			margin-top: -1px;
+			float: right;
+			display: inline-block;
+			text-align: right;
+			background-color: white;
+			z-index: 500;
+		}
+		.navbar-opener{
+			height: 30px;
+			width: 40px;
+			margin: 15px 10px;
+			padding: 0;
+			border: 0px;
+			background-color: white;
+		}
+		.navbar-opener-line{
+			height: 4px;
+			width: 30px;
+			background-color: black;
+			margin: 4.5px 5px;
+		}
+		.navbar-opener:focus {
+			outline: 0 !important;
+		}
+
+		.navbar-text-holder{
+			height: $navbarHeightP;
+			line-height: $navbarHeightD - 40px;
+			margin: 0;
+			margin-top: -1px;
+			padding: 0;
+			display: block;
+			width: 100%;
+
+			position: absolute;
+			z-index: 400;
+			top: -200px;
+
+
+			background-color: transparent;
+
+			ul {
+				margin: -1px;
+				padding: 0;
+			}
+
+			li {
+				background-color: white;
+				margin: 0;
+				text-align: center;
+				vertical-align: middle;
+				color: black;
+				font-size: 0.9em;
+				list-style: none;
+			}
+			li:hover {
+				background-color: #6abcd4;
+			}
+
+			a, a:hover, a:active, a:visited {
+				text-decoration: none;
+			}
+		}
+
+		#contact {
+			@include Shadow(0,5px,5px,-5px,#2c5996);
+		}
+
+		
+
+		//Animiation
+		@include keyframes(transformToCloseButton-first-on) {
+			0% {
+				@include RotateElement(0deg);
+			}
+			100% {
+				@include RotateElement(45deg);
+			}
+		}
+		@include keyframes(transformToCloseButton-first-off) {
+			0% {
+				@include RotateElement(45deg);
+			}
+			100% {
+				@include RotateElement(0deg);
+			}
+		}
+
+		@include keyframes(transformToCloseButton-second-on) {
+			0% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
+		@include keyframes(transformToCloseButton-second-off) {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+
+		@include keyframes(transformToCloseButton-third-on) {
+			0% {
+				@include RotateElement(0deg);
+				margin-top: 0px;
+			}
+			100% {
+				@include RotateElement(-45deg);
+				margin-top: -18px;
+			}
+		}
+		@include keyframes(transformToCloseButton-third-off) {
+			0% {
+				@include RotateElement(-45deg);
+				margin-top: -18px;
+			}
+			100% {
+				@include RotateElement(0deg);
+				margin-top: 0px;
+			}
+		}
+
+		.firston {
+			@include animation(0s, 0.2s, transformToCloseButton-first-on);
+		}
+		.firstoff {
+			@include animation(0s, 0.2s, transformToCloseButton-first-off);
+		}
+
+		.secondon{
+			@include animation(0s, 0.2s, transformToCloseButton-second-on);
+		}
+		.secondoff {
+			@include animation(0s, 0.2s, transformToCloseButton-second-off);
+		}
+
+		.thirdon {
+			@include animation(0s, 0.2s, transformToCloseButton-third-on);
+		}
+		.thirdoff {
+			@include animation(0s, 0.2s, transformToCloseButton-third-off);
+		}
+
+
+		@include keyframes(slideDown) {
+			0% {
+				top: -200px;
+			}
+			100% {
+				top: 60px;
+			}
+		}
+		@include keyframes(slideUp) {
+			0% {
+				top: 60px;
+			}
+			100% {
+				top: -200px;
+			}
+		}
+		.slidedown {
+			@include animation(0s, 0.2s, slideDown);
+		}
+		.slideup {
+			@include animation(0s, 0.2s, slideUp);
+		}
+}
+
+
+
+/*--------------------------------
+             desktop
+--------------------------------*/
+
+	@include desktopScreen {
+
+		.navbar {
+			background-color: transparent;
+			@include BorderRadius(0px);
+			max-width: 1024px;
+			margin: 0 auto;
+			position: relative;
+			top: 25px;
+
+		}
+
+		.logo-opener-container{
+			width: 10%;
+			height: $navbarHeightD;
+			margin: 0;
+			display: inline-block;
+			float: left;
+
+			background-color: transparent;
+		}
+		.logo {
+			margin: 10px auto;
+			width: 60px;
+			height: 60px;
+			margin-top: 10px;
+			background-color: transparent;
+			text-align: center;
+
+			img {
+				margin-top: 9px;
+				width: 42px;
+				height: 42px;
+
+				@include RotateElement(45deg);
+				@include Shadow(0,0,15px,0,black);
+			}
+		}
+		.navbar-text-holder{
+			width: 90%;
+			height: $navbarHeightD;
+			line-height: $navbarHeightD - 40px;
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			float: right;
+
+
+			background-color: transparent;
+
+			ul {
+				float: right;
+				margin: 20px 0;
+				padding: 0px;
+				margin-right: 10px;
+			}
+
+			li {
+				display: inline-block;
+				background-color: transparent;
+				width: 110px;
+				margin: 0 10px;
+				text-align: center;
+				vertical-align: middle;
+				color: #6abcd4;
+				font-size: 0.9em;
+			}
+			li:hover {
+				color: white;
+			}
+
+			a, a:hover, a:active, a:visited {
+				text-decoration: none;
+			}
+		}
+		#contact {border: 1px solid #6abcd4; @include BorderRadius(5px);}
+		#contact:hover {border: 1px solid white;}
+
+		.navbar-opener-container {
+			display: none;
+		}
+	}
+
+
+
+/*--------------------------------
+             tablet
+--------------------------------*/
+	@include tabletScreen {
+		.navbar {
+			background-color: transparent;
+			@include BorderRadius(0px);
+			max-width: 1024px;
+			margin: 0 auto;
+			position: relative;
+			top: 25px;
+
+		}
+
+		.logo-opener-container{
+			width: 10%;
+			height: $navbarHeightD;
+			margin: 0;
+			display: inline-block;
+			float: left;
+
+			background-color: transparent;
+		}
+		.logo {
+			margin: 10px auto;
+			width: 60px;
+			height: 60px;
+			margin-top: 10px;
+			background-color: transparent;
+			text-align: center;
+
+			img {
+				margin-top: 9px;
+				width: 42px;
+				height: 42px;
+
+				@include RotateElement(45deg);
+				@include Shadow(0,0,15px,0,black);
+			}
+		}
+		.navbar-text-holder{
+			width: 90%;
+			height: $navbarHeightD;
+			line-height: $navbarHeightD - 50px;
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			float: right;
+
+
+			background-color: transparent;
+
+			ul {
+				float: right;
+				margin: 25px 0;
+				padding: 0px;
+				margin-right: 10px;
+			}
+
+			li {
+				display: inline-block;
+				background-color: transparent;
+				width: 72px;
+				margin: 0 3px;
+				text-align: center;
+				vertical-align: middle;
+				color: #6abcd4;
+				font-size: 0.8em;
+			}
+			li:hover {
+				color: white;
+			}
+
+			a, a:hover, a:active, a:visited {
+				text-decoration: none;
+			}
+		}
+		#contact {border: 1px solid #6abcd4; @include BorderRadius(5px);}
+		#contact:hover {border: 1px solid white;}
+
+		.navbar-opener-container {
+			display: none;
+		}
+	}

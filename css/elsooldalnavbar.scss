@@ -1,0 +1,533 @@
+// SASS
+//imports
+	@import "mine.scss";
+
+/*--------------------------------
+             navbar
+--------------------------------*/
+
+
+// logoszinek: #6abcd4	#00a3ce	#167fbc	#2c5996	#1e2449
+
+
+/*--------------------------------
+             phone
+--------------------------------*/
+	@include phoneScreen {
+		#home {
+			display: none;
+		}
+
+		.navbar {
+			background-color: white;
+			@include BorderRadius(0px);
+			width: 101%;
+			margin: 0;
+			margin-left: -1px;
+			position: fixed;
+			z-index: 500;
+			top: 0px;
+			height: 60px;
+			@include Shadow(0,0,5px,0,#2c5996);
+		}
+
+
+		.logo-opener-container{
+			width: 100%;
+			position: relative;
+			z-index: 500;
+		}
+
+		.logo {
+			margin: 10px 0;
+			padding-left: 20px;
+			width: 50%;
+			height: 60px;
+			margin-top: -1px;
+			background-color: white;
+			text-align: left;
+			display: inline-block;
+			float: left;
+			z-index: 500;
+
+			span {
+				margin: 5px 0px;
+				font-size: 3.5em;
+			}
+		}
+		.navbar-opener-container {
+			width: 50%;
+			height: 60px;
+			margin: 0;
+			margin-top: -1px;
+			float: right;
+			display: inline-block;
+			text-align: right;
+			background-color: white;
+			z-index: 500;
+		}
+		.navbar-opener{
+			height: 30px;
+			width: 40px;
+			margin: 15px 10px;
+			padding: 0;
+			border: 0px;
+			background-color: white;
+		}
+		.navbar-opener-line{
+			height: 4px;
+			width: 30px;
+			background-color: black;
+			margin: 4.5px 5px;
+		}
+		.navbar-opener:focus {
+			outline: 0 !important;
+		}
+
+		.navbar-text-holder{
+			height: 60px;
+			line-height: 60px - 40px;
+			margin: 0;
+			margin-top: -1px;
+			padding: 0;
+			display: block;
+			width: 100%;
+
+			position: absolute;
+			z-index: 400;
+			top: -300px;
+
+
+			background-color: transparent;
+
+			ul {
+				margin: -1px;
+				padding: 0;
+			}
+
+			li {
+				display: block;
+				background-color: #1a1a1a;
+				height: 60px;
+				line-height: 60px;
+				vertical-align: middle;
+				margin: 0;
+				text-align: center;
+				vertical-align: middle;
+				color: white;
+				font-size: 1.3em;
+				list-style: none;
+				border-bottom: 3px solid black;
+			}
+			li:hover {
+				background-color: #6abcd4;
+			}
+
+			a, a:hover, a:active, a:visited {
+				text-decoration: none;
+			}
+		}
+		#work 	 {background-color: #1a1a1a; border-bottom-color: #097054;}
+		#company {background-color: #1a1a1a; border-bottom-color: #FFDE00;}
+		#carrers {background-color: #1a1a1a; border-bottom-color: #FF9900;}
+		#writing {background-color: #1a1a1a; border-bottom-color: #217C7E;}
+		#contact {background-color: #1a1a1a; border-bottom-color: #9A3334;}
+		
+
+		//Animiation
+			@include keyframes(transformToCloseButton-first-on) {
+				0% {
+					@include RotateElement(0deg);
+				}
+				100% {
+					@include RotateElement(45deg);
+				}
+			}
+			@include keyframes(transformToCloseButton-first-off) {
+				0% {
+					@include RotateElement(45deg);
+				}
+				100% {
+					@include RotateElement(0deg);
+				}
+			}
+
+			@include keyframes(transformToCloseButton-second-on) {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			@include keyframes(transformToCloseButton-second-off) {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+
+			@include keyframes(transformToCloseButton-third-on) {
+				0% {
+					@include RotateElement(0deg);
+					margin-top: 0px;
+				}
+				100% {
+					@include RotateElement(-45deg);
+					margin-top: -18px;
+				}
+			}
+			@include keyframes(transformToCloseButton-third-off) {
+				0% {
+					@include RotateElement(-45deg);
+					margin-top: -18px;
+				}
+				100% {
+					@include RotateElement(0deg);
+					margin-top: 0px;
+				}
+			}
+
+			.firston {
+				@include animation(0s, 0.2s, transformToCloseButton-first-on);
+			}
+			.firstoff {
+				@include animation(0s, 0.2s, transformToCloseButton-first-off);
+			}
+
+			.secondon{
+				@include animation(0s, 0.2s, transformToCloseButton-second-on);
+			}
+			.secondoff {
+				@include animation(0s, 0.2s, transformToCloseButton-second-off);
+			}
+
+			.thirdon {
+				@include animation(0s, 0.2s, transformToCloseButton-third-on);
+			}
+			.thirdoff {
+				@include animation(0s, 0.2s, transformToCloseButton-third-off);
+			}
+
+
+			@include keyframes(slideDown) {
+				0% {
+					top: -300px;
+				}
+				100% {
+					top: 60px;
+				}
+			}
+			@include keyframes(slideUp) {
+				0% {
+					top: 60px;
+				}
+				100% {
+					top: -300px;
+				}
+			}
+			.slidedown {
+				@include animation(0s, 0.2s, slideDown);
+			}
+			.slideup {
+				@include animation(0s, 0.2s, slideUp);
+			}
+}
+
+
+
+/*--------------------------------
+    					default
+--------------------------------*/
+	// bg color animation
+		// work
+			@include keyframes(workSimpleToHover) {
+				0% {
+					background-color: #1a1a1a;
+					border-bottom-color: #097054;
+				}
+				100% {
+					background-color: #097054;
+					border-bottom-color: lighten(#097054, 20%);
+				}
+			}
+			@include keyframes(workHoverToSimple) {
+				0% {
+					background-color: #097054;
+					border-bottom-color: lighten(#097054, 20%);
+				}
+				100% {
+					background-color: #1a1a1a;
+					border-bottom-color: #097054;
+				}
+			}
+
+			.workhover {
+				@include animation(0s, 0.2s, workSimpleToHover);
+			}
+			.worksimple {
+				@include animation(0s, 0.2s, workHoverToSimple);
+			}
+
+		// company
+
+			@include keyframes(companySimpleToHover) {
+				0% {
+					background-color: #1a1a1a;
+					border-bottom-color: #FFDE00;
+				}
+				100% {
+					background-color: #FFDE00;
+					border-bottom-color: lighten(#FFDE00, 20%);
+				}
+			}
+			@include keyframes(companyHoverToSimple) {
+				0% {
+					background-color: #FFDE00;
+					border-bottom-color: lighten(#FFDE00, 20%);
+				}
+				100% {
+					background-color: #1a1a1a;
+					border-bottom-color: #FFDE00;
+				}
+			}
+
+			.companyhover {
+				@include animation(0s, 0.2s, companySimpleToHover);
+			}
+			.companysimple {
+				@include animation(0s, 0.2s, companyHoverToSimple);
+			}
+
+
+		// carrers
+			@include keyframes(carrersSimpleToHover) {
+				0% {
+					background-color: #1a1a1a;
+					border-bottom-color: #FF9900;
+				}
+				100% {
+					background-color: #FF9900;
+					border-bottom-color: lighten(#FF9900, 20%);
+				}
+			}
+			@include keyframes(carrersHoverToSimple) {
+				0% {
+					background-color: #FF9900;
+					border-bottom-color: lighten(#FF9900, 20%);
+				}
+				100% {
+					background-color: #1a1a1a;
+					border-bottom-color: #FF9900;
+				}
+			}
+
+			.carrershover {
+				@include animation(0s, 0.2s, carrersSimpleToHover);
+			}
+			.carrerssimple {
+				@include animation(0s, 0.2s, carrersHoverToSimple);
+			}
+
+
+		// writing
+			@include keyframes(writingSimpleToHover) {
+				0% {
+					background-color: #1a1a1a;
+					border-bottom-color: #217C7E;
+				}
+				100% {
+					background-color: #217C7E;
+					border-bottom-color: lighten(#217C7E, 20%);
+				}
+			}
+			@include keyframes(writingHoverToSimple) {
+				0% {
+					background-color: #217C7E;
+					border-bottom-color: lighten(#217C7E, 20%);
+				}
+				100% {
+					background-color: #1a1a1a;
+					border-bottom-color: #217C7E;
+				}
+			}
+
+			.writinghover {
+				@include animation(0s, 0.2s, writingSimpleToHover);
+			}
+			.writingsimple {
+				@include animation(0s, 0.2s, writingHoverToSimple);
+			}
+
+
+		// contact
+			@include keyframes(contactSimpleToHover) {
+				0% {
+					background-color: #1a1a1a;
+					border-bottom-color: #9A3334;
+				}
+				100% {
+					background-color: #9A3334;
+					border-bottom-color: lighten(#9A3334, 20%);
+				}
+			}
+			@include keyframes(contactHoverToSimple) {
+				0% {
+					background-color: #9A3334;
+					border-bottom-color: lighten(#9A3334, 20%);
+				}
+				100% {
+					background-color: #1a1a1a;
+					border-bottom-color: #9A3334;
+				}
+			}
+
+			.contacthover {
+				@include animation(0s, 0.2s, contactSimpleToHover);
+			}
+			.contactsimple {
+				@include animation(0s, 0.2s, contactHoverToSimple);
+			}
+
+/*--------------------------------
+             desktop
+--------------------------------*/
+	@include desktopScreen {
+		.logo-opener-container {
+			display: none;
+		}
+		.navbar {
+			width: 100%;
+			position: fixed;
+			
+			@include BorderRadius(0px);
+			height: 60px;
+			padding: 0;
+
+			z-index: 500;
+		}
+
+		.navbar-text-holder{
+			z-index: 500;
+
+			width: 101%;
+			position: absolute;
+			top: -1px;
+			left: -1px;
+
+			margin: 0;
+			padding: 0;
+
+			ul {
+				display: block;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			li {
+				list-style-type: none;
+				display: inline-block;
+				width: 18.4%;
+				font-size: 1.4em;
+				margin: 0;
+				
+				border-right: 1px solid black;
+				border-left: 1px solid rgb(50,50,50);
+				border-bottom: 3px solid black;
+			  
+				height: 60px;
+				line-height: 60px;
+				vertical-align: middle;
+				text-align: center;
+			}
+
+			a, a:hover, a:active, a:visited {
+				color: white;
+			}
+		}
+		#home {
+			width: 8%;
+			border-bottom-color:  #0080ff;
+			border-left: 0;
+			background-color: #04303d;
+			font-size: 3em;
+		}
+
+		#work 	 {background-color: #1a1a1a; border-bottom-color: #097054;}
+		#company {background-color: #1a1a1a; border-bottom-color: #FFDE00;}
+		#carrers {background-color: #1a1a1a; border-bottom-color: #FF9900;}
+		#writing {background-color: #1a1a1a; border-bottom-color: #217C7E;}
+		#contact {background-color: #1a1a1a; border-bottom-color: #9A3334;}
+}
+
+/*--------------------------------
+             tablet
+--------------------------------*/
+@include tabletScreen {
+	.logo-opener-container {
+			display: none;
+		}
+		.navbar {
+			width: 100%;
+			position: fixed;
+			
+			@include BorderRadius(0px);
+			height: 60px;
+			padding: 0;
+
+			z-index: 500;
+		}
+
+		.navbar-text-holder{
+			z-index: 500;
+
+			width: 101%;
+			position: absolute;
+			top: -1px;
+			left: -1px;
+
+			margin: 0;
+			padding: 0;
+
+			ul {
+				display: block;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			li {
+				display: inline-block;
+				width: 18.4%;
+				font-size: 1em;
+				margin: 0 -2px;
+				
+				border-right: 1px solid black;
+				border-left: 1px solid rgb(50,50,50);
+				border-bottom: 3px solid black;
+			  
+				height: 60px;
+				line-height: 60px;
+				vertical-align: middle;
+				text-align: center;
+			}
+
+			a, a:hover, a:active, a:visited {
+				color: white;
+			}
+		}
+		#home {
+			width: 8%;
+			border-bottom-color:  #0080ff;
+			border-left: 0;
+			background-color: #04303d;
+			font-size: 2em;
+		}
+
+		#work 	 {background-color: #1a1a1a; border-bottom-color: #097054;}
+		#company {background-color: #1a1a1a; border-bottom-color: #FFDE00;}
+		#carrers {background-color: #1a1a1a; border-bottom-color: #FF9900;}
+		#writing {background-color: #1a1a1a; border-bottom-color: #217C7E;}
+		#contact {background-color: #1a1a1a; border-bottom-color: #9A3334;}
+}

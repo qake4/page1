@@ -1,0 +1,260 @@
+// SASS
+//imports
+	@import "mine.scss";
+
+/*--------------------------------
+             navbar
+--------------------------------*/
+
+
+// logoszinek: #6abcd4	#00a3ce	#167fbc	#2c5996	#1e2449
+
+
+/*--------------------------------
+             phone
+--------------------------------*/
+	@include phoneScreen {
+}
+
+
+
+/*--------------------------------
+    default (desktop + phone)
+--------------------------------*/
+	.logo-opener-container {
+		display: none;
+	}
+
+	.navbar {
+		width: 100%;
+		position: fixed;
+		
+		@include BorderRadius(0px);
+		height: 60px;
+		padding: 0;
+
+		z-index: 500;
+	}
+
+	.navbar-text-holder{
+		z-index: 500;
+
+		width: 101%;
+		position: absolute;
+		top: -1px;
+		left: -1px;
+
+		margin: 0;
+		padding: 0;
+
+		ul {
+			display: block;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			display: inline-block;
+			list-style-type: none;
+			width: 18.4%;
+			
+			margin: 0;
+			border-right: 1px solid black;
+			border-left: 1px solid rgb(50,50,50);
+			border-bottom: 3px solid black;
+		  
+			font-size: 1.4em;
+			height: 60px;
+			line-height: 60px;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		a, a:hover, a:active, a:visited {
+			color: white;
+		}
+	}
+	#home {
+		width: 8%;
+		font-size: 3em;
+		border-bottom-color:  #0080ff;
+		border-left: 0;
+		background-color: #04303d;
+	}
+
+	#work 	 {background-color: #1a1a1a; border-bottom-color: #097054;}
+	#company {background-color: #1a1a1a; border-bottom-color: #FFDE00;}
+	#carrers {background-color: #1a1a1a; border-bottom-color: #FF9900;}
+	#writing {background-color: #1a1a1a; border-bottom-color: #217C7E;}
+	#contact {background-color: #1a1a1a; border-bottom-color: #9A3334;}
+
+	// bg color animation
+		// work
+			@include keyframes(workSimpleToHover) {
+				0% {
+					background-color: #1a1a1a;
+					border-bottom-color: #097054;
+				}
+				100% {
+					background-color: #097054;
+					border-bottom-color: lighten(#097054, 20%);
+				}
+			}
+			@include keyframes(workHoverToSimple) {
+				0% {
+					background-color: #097054;
+					border-bottom-color: lighten(#097054, 20%);
+				}
+				100% {
+					background-color: #1a1a1a;
+					border-bottom-color: #097054;
+				}
+			}
+
+			.workhover {
+				@include animation(0s, 0.2s, workSimpleToHover);
+			}
+			.worksimple {
+				@include animation(0s, 0.2s, workHoverToSimple);
+			}
+
+		// company
+
+			@include keyframes(companySimpleToHover) {
+				0% {
+					background-color: #1a1a1a;
+					border-bottom-color: #FFDE00;
+				}
+				100% {
+					background-color: #FFDE00;
+					border-bottom-color: lighten(#FFDE00, 20%);
+				}
+			}
+			@include keyframes(companyHoverToSimple) {
+				0% {
+					background-color: #FFDE00;
+					border-bottom-color: lighten(#FFDE00, 20%);
+				}
+				100% {
+					background-color: #1a1a1a;
+					border-bottom-color: #FFDE00;
+				}
+			}
+
+			.companyhover {
+				@include animation(0s, 0.2s, companySimpleToHover);
+			}
+			.companysimple {
+				@include animation(0s, 0.2s, companyHoverToSimple);
+			}
+
+
+		// carrers
+			@include keyframes(carrersSimpleToHover) {
+				0% {
+					background-color: #1a1a1a;
+					border-bottom-color: #FF9900;
+				}
+				100% {
+					background-color: #FF9900;
+					border-bottom-color: lighten(#FF9900, 20%);
+				}
+			}
+			@include keyframes(carrersHoverToSimple) {
+				0% {
+					background-color: #FF9900;
+					border-bottom-color: lighten(#FF9900, 20%);
+				}
+				100% {
+					background-color: #1a1a1a;
+					border-bottom-color: #FF9900;
+				}
+			}
+
+			.carrershover {
+				@include animation(0s, 0.2s, carrersSimpleToHover);
+			}
+			.carrerssimple {
+				@include animation(0s, 0.2s, carrersHoverToSimple);
+			}
+
+
+		// writing
+			@include keyframes(writingSimpleToHover) {
+				0% {
+					background-color: #1a1a1a;
+					border-bottom-color: #217C7E;
+				}
+				100% {
+					background-color: #217C7E;
+					border-bottom-color: lighten(#217C7E, 20%);
+				}
+			}
+			@include keyframes(writingHoverToSimple) {
+				0% {
+					background-color: #217C7E;
+					border-bottom-color: lighten(#217C7E, 20%);
+				}
+				100% {
+					background-color: #1a1a1a;
+					border-bottom-color: #217C7E;
+				}
+			}
+
+			.writinghover {
+				@include animation(0s, 0.2s, writingSimpleToHover);
+			}
+			.writingsimple {
+				@include animation(0s, 0.2s, writingHoverToSimple);
+			}
+
+
+		// contact
+			@include keyframes(contactSimpleToHover) {
+				0% {
+					background-color: #1a1a1a;
+					border-bottom-color: #9A3334;
+				}
+				100% {
+					background-color: #9A3334;
+					border-bottom-color: lighten(#9A3334, 20%);
+				}
+			}
+			@include keyframes(contactHoverToSimple) {
+				0% {
+					background-color: #9A3334;
+					border-bottom-color: lighten(#9A3334, 20%);
+				}
+				100% {
+					background-color: #1a1a1a;
+					border-bottom-color: #9A3334;
+				}
+			}
+
+			.contacthover {
+				@include animation(0s, 0.2s, contactSimpleToHover);
+			}
+			.contactsimple {
+				@include animation(0s, 0.2s, contactHoverToSimple);
+			}
+
+/*--------------------------------
+             desktop
+--------------------------------*/
+
+	
+
+
+/*--------------------------------
+             tablet
+--------------------------------*/
+	@include tabletScreen {
+		.navbar-text-holder{
+			li {
+				font-size: 1em;
+			}
+		}
+		#home {
+			font-size: 2em;
+		}
+}

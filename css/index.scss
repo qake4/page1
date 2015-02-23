@@ -1,0 +1,80 @@
+// SASS
+
+body {
+	background-color: white;
+}
+
+/*--------------------------------
+          MINE MIXINS
+--------------------------------*/
+	@import "mine.scss";
+
+
+
+/*--------------------------------
+             NAVBAR
+--------------------------------*/
+	@import "navbar.scss";
+
+
+
+/*--------------------------------
+           	MAIN PAGE
+--------------------------------*/
+	#main-page {
+		background-image: url(../pics/div-bg-01.png);
+		margin-top: 0px;
+		position: relative;
+	}
+
+	.slogan {
+		font-family: 'Comfortaa', cursive;
+		color: white;
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		height: 100px;
+		line-height: 100px;
+		vertical-align: middle;
+
+		background-color: transparent;
+
+
+		@include phoneScreen {font-size: 2em};
+		@include tabletScreen {font-size: 3em};
+		@include desktopScreen {font-size: 4em};
+	}
+	.learnmore {
+		font-family: 'Comfortaa', cursive;
+		color: white;
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		height: 50px;
+		line-height: 50px;
+		vertical-align: middle;
+		background-color: transparent;
+
+
+		@include phoneScreen {font-size: 1em};
+		@include tabletScreen {font-size: 1.25em};
+		@include desktopScreen {font-size: 1.5em};
+
+		a, a:hover, a:active, a:visited {
+			text-decoration: none;
+			color: white;
+		}
+		a:hover {
+			color: black;
+		}
+		span {
+			margin-left: 5px;
+		}
+	}
+
+
+
+/*--------------------------------
+             PAGES
+--------------------------------*/
+	@import "pages.scss";

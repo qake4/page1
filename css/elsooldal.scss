@@ -1,0 +1,166 @@
+// SASS
+
+/*--------------------------------
+          MINE MIXINS
+--------------------------------*/
+	@import "mine.scss";
+
+
+
+/*--------------------------------
+             NAVBAR
+--------------------------------*/
+	@import "elsooldalnavbar.scss";
+
+
+body {
+	background-color: lighten(#1a1a1a, 5%);
+	
+	background-size: 1366px auto;
+}
+
+/*--------------------------------
+           	MAIN PAGE
+--------------------------------*/
+
+	.main-page {
+		background-image: url(../pics/elsooldal-bg.jpg);
+		background-position: center;
+		width: 100%;
+	}
+	.slogan {
+		font-family: 'Comfortaa', cursive;
+		color: brown;
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		height: 100px;
+		line-height: 100px;
+		vertical-align: middle;
+
+		background-color: transparent;
+
+
+		@include phoneScreen {font-size: 2em};
+		@include tabletScreen {font-size: 3em};
+		@include desktopScreen {font-size: 4em};
+
+		top: 80px;
+	}
+	.learnmore {
+		font-family: 'Comfortaa', cursive;
+		color: white;
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		height: 50px;
+		line-height: 50px;
+		vertical-align: middle;
+		background-color: transparent;
+
+
+		@include phoneScreen {font-size: 1em};
+		@include tabletScreen {font-size: 1.25em};
+		@include desktopScreen {font-size: 1.5em};
+
+		a, a:hover, a:active, a:visited {
+			text-decoration: none;
+			color: white;
+		}
+		a:hover {
+			color: black;
+		}
+		span {
+			margin-left: 5px;
+		}
+	}
+
+	//social square
+		$socialBG: rgba(255,255,255,0.3);
+
+		.arrow-holder {
+			width: 100px;
+			height:100px;
+			overflow: hidden;
+			position: fixed;
+			@include BorderRadius(5px);
+			z-index: 450;
+		}
+		.arrow{
+		   width: 100px;
+		   height: 100px;
+		   @include RotateElement(45deg);
+		   border: 1px solid white;
+		}
+		#facebook {
+		    background-color: $socialBG;
+		    left: 70%;
+		    position:relative;
+		    z-index: 5;
+		    float:left;
+		}
+		#facebook:hover{
+		    background-color: #3b5998;
+		}
+		#twitter {
+		    background-color: $socialBG;
+		    right: 70%;
+		    position:relative;
+		    z-index: 6;
+		}
+		#twitter:hover{
+		    background-color: #0084b4;
+		}
+		#instagram {
+		    background-color: $socialBG;
+		    bottom: 30%;
+		    position:relative;
+		    z-index: 7;
+		}
+		#instagram:hover{
+		    background-color: #517fa4;
+		}
+		#googleplus {
+		    background-color: $socialBG;
+		    position:relative;
+		    bottom: 270%;
+		    z-index: 8;
+		}
+		#googleplus:hover{
+		    background-color:  #d34836;
+		}
+
+		.social-container {
+			width: 20px;
+			height: 40px;
+			@include RotateElement(-45deg);
+			position: relative;
+			font-size: 2em;
+			color: white;
+		}
+		#facebook-container {
+			top: 55px;
+			left: 15px;
+		}
+		#twitter-container {
+			top: -65px;
+			left: -5px;
+		}
+		#instagram-container {
+			top: 3px;
+			left: 10px;
+		}
+		#googleplus-container {
+			top: 60px;
+			left: 70px;
+		}
+
+
+
+
+
+
+/*--------------------------------
+             PAGES
+--------------------------------*/
+	@import "elosoldal-pages.scss";

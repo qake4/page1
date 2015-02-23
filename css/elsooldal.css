@@ -1,0 +1,1515 @@
+/*--------------------------------
+          MINE MIXINS
+--------------------------------*/
+/*--------------------------------
+             NAVBAR
+--------------------------------*/
+/*--------------------------------
+             navbar
+--------------------------------*/
+/*--------------------------------
+             phone
+--------------------------------*/
+@media only screen and (max-width: 480px) {
+  #home {
+    display: none; }
+
+  .navbar {
+    background-color: white;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    width: 101%;
+    margin: 0;
+    margin-left: -1px;
+    position: fixed;
+    z-index: 500;
+    top: 0px;
+    height: 60px;
+    webkit-box-shadow: 0 0 5px 0 #2c5996;
+    -moz-box-shadow: 0 0 5px 0 #2c5996;
+    box-shadow: 0 0 5px 0 #2c5996; }
+
+  .logo-opener-container {
+    width: 100%;
+    position: relative;
+    z-index: 500; }
+
+  .logo {
+    margin: 10px 0;
+    padding-left: 20px;
+    width: 50%;
+    height: 60px;
+    margin-top: -1px;
+    background-color: white;
+    text-align: left;
+    display: inline-block;
+    float: left;
+    z-index: 500; }
+    .logo span {
+      margin: 5px 0px;
+      font-size: 3.5em; }
+
+  .navbar-opener-container {
+    width: 50%;
+    height: 60px;
+    margin: 0;
+    margin-top: -1px;
+    float: right;
+    display: inline-block;
+    text-align: right;
+    background-color: white;
+    z-index: 500; }
+
+  .navbar-opener {
+    height: 30px;
+    width: 40px;
+    margin: 15px 10px;
+    padding: 0;
+    border: 0px;
+    background-color: white; }
+
+  .navbar-opener-line {
+    height: 4px;
+    width: 30px;
+    background-color: black;
+    margin: 4.5px 5px; }
+
+  .navbar-opener:focus {
+    outline: 0 !important; }
+
+  .navbar-text-holder {
+    height: 60px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: -1px;
+    padding: 0;
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: 400;
+    top: -300px;
+    background-color: transparent; }
+    .navbar-text-holder ul {
+      margin: -1px;
+      padding: 0; }
+    .navbar-text-holder li {
+      display: block;
+      background-color: #1a1a1a;
+      height: 60px;
+      line-height: 60px;
+      vertical-align: middle;
+      margin: 0;
+      text-align: center;
+      vertical-align: middle;
+      color: white;
+      font-size: 1.3em;
+      list-style: none;
+      border-bottom: 3px solid black; }
+    .navbar-text-holder li:hover {
+      background-color: #6abcd4; }
+    .navbar-text-holder a, .navbar-text-holder a:hover, .navbar-text-holder a:active, .navbar-text-holder a:visited {
+      text-decoration: none; }
+
+  #work {
+    background-color: #1a1a1a;
+    border-bottom-color: #097054; }
+
+  #company {
+    background-color: #1a1a1a;
+    border-bottom-color: #FFDE00; }
+
+  #carrers {
+    background-color: #1a1a1a;
+    border-bottom-color: #FF9900; }
+
+  #writing {
+    background-color: #1a1a1a;
+    border-bottom-color: #217C7E; }
+
+  #contact {
+    background-color: #1a1a1a;
+    border-bottom-color: #9A3334; }
+
+  @-webkit-keyframes transformToCloseButton-first-on {
+    0% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg); }
+    100% {
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); } }
+  @-moz-keyframes transformToCloseButton-first-on {
+    0% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg); }
+    100% {
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); } }
+  @-ms-keyframes transformToCloseButton-first-on {
+    0% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg); }
+    100% {
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); } }
+  @-o-keyframes transformToCloseButton-first-on {
+    0% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg); }
+    100% {
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); } }
+  @keyframes transformToCloseButton-first-on {
+    0% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg); }
+    100% {
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); } }
+  @-webkit-keyframes transformToCloseButton-first-off {
+    0% {
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); }
+    100% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg); } }
+  @-moz-keyframes transformToCloseButton-first-off {
+    0% {
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); }
+    100% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg); } }
+  @-ms-keyframes transformToCloseButton-first-off {
+    0% {
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); }
+    100% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg); } }
+  @-o-keyframes transformToCloseButton-first-off {
+    0% {
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); }
+    100% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg); } }
+  @keyframes transformToCloseButton-first-off {
+    0% {
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); }
+    100% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg); } }
+  @-webkit-keyframes transformToCloseButton-second-on {
+    0% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+  @-moz-keyframes transformToCloseButton-second-on {
+    0% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+  @-ms-keyframes transformToCloseButton-second-on {
+    0% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+  @-o-keyframes transformToCloseButton-second-on {
+    0% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+  @keyframes transformToCloseButton-second-on {
+    0% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+  @-webkit-keyframes transformToCloseButton-second-off {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-moz-keyframes transformToCloseButton-second-off {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-ms-keyframes transformToCloseButton-second-off {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-o-keyframes transformToCloseButton-second-off {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @keyframes transformToCloseButton-second-off {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-webkit-keyframes transformToCloseButton-third-on {
+    0% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      margin-top: 0px; }
+    100% {
+      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top: -18px; } }
+  @-moz-keyframes transformToCloseButton-third-on {
+    0% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      margin-top: 0px; }
+    100% {
+      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top: -18px; } }
+  @-ms-keyframes transformToCloseButton-third-on {
+    0% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      margin-top: 0px; }
+    100% {
+      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top: -18px; } }
+  @-o-keyframes transformToCloseButton-third-on {
+    0% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      margin-top: 0px; }
+    100% {
+      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top: -18px; } }
+  @keyframes transformToCloseButton-third-on {
+    0% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      margin-top: 0px; }
+    100% {
+      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top: -18px; } }
+  @-webkit-keyframes transformToCloseButton-third-off {
+    0% {
+      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top: -18px; }
+    100% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      margin-top: 0px; } }
+  @-moz-keyframes transformToCloseButton-third-off {
+    0% {
+      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top: -18px; }
+    100% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      margin-top: 0px; } }
+  @-ms-keyframes transformToCloseButton-third-off {
+    0% {
+      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top: -18px; }
+    100% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      margin-top: 0px; } }
+  @-o-keyframes transformToCloseButton-third-off {
+    0% {
+      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top: -18px; }
+    100% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      margin-top: 0px; } }
+  @keyframes transformToCloseButton-third-off {
+    0% {
+      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top: -18px; }
+    100% {
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      margin-top: 0px; } }
+  .firston {
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-name: transformToCloseButton-first-on;
+    -webkit-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 0s;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-name: transformToCloseButton-first-on;
+    -moz-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 0s;
+    -o-animation-duration: 0.2s;
+    -o-animation-name: transformToCloseButton-first-on;
+    -o-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    animation-delay: 0s;
+    animation-duration: 0.2s;
+    animation-name: transformToCloseButton-first-on;
+    animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */ }
+
+  .firstoff {
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-name: transformToCloseButton-first-off;
+    -webkit-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 0s;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-name: transformToCloseButton-first-off;
+    -moz-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 0s;
+    -o-animation-duration: 0.2s;
+    -o-animation-name: transformToCloseButton-first-off;
+    -o-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    animation-delay: 0s;
+    animation-duration: 0.2s;
+    animation-name: transformToCloseButton-first-off;
+    animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */ }
+
+  .secondon {
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-name: transformToCloseButton-second-on;
+    -webkit-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 0s;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-name: transformToCloseButton-second-on;
+    -moz-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 0s;
+    -o-animation-duration: 0.2s;
+    -o-animation-name: transformToCloseButton-second-on;
+    -o-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    animation-delay: 0s;
+    animation-duration: 0.2s;
+    animation-name: transformToCloseButton-second-on;
+    animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */ }
+
+  .secondoff {
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-name: transformToCloseButton-second-off;
+    -webkit-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 0s;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-name: transformToCloseButton-second-off;
+    -moz-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 0s;
+    -o-animation-duration: 0.2s;
+    -o-animation-name: transformToCloseButton-second-off;
+    -o-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    animation-delay: 0s;
+    animation-duration: 0.2s;
+    animation-name: transformToCloseButton-second-off;
+    animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */ }
+
+  .thirdon {
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-name: transformToCloseButton-third-on;
+    -webkit-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 0s;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-name: transformToCloseButton-third-on;
+    -moz-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 0s;
+    -o-animation-duration: 0.2s;
+    -o-animation-name: transformToCloseButton-third-on;
+    -o-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    animation-delay: 0s;
+    animation-duration: 0.2s;
+    animation-name: transformToCloseButton-third-on;
+    animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */ }
+
+  .thirdoff {
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-name: transformToCloseButton-third-off;
+    -webkit-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 0s;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-name: transformToCloseButton-third-off;
+    -moz-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 0s;
+    -o-animation-duration: 0.2s;
+    -o-animation-name: transformToCloseButton-third-off;
+    -o-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    animation-delay: 0s;
+    animation-duration: 0.2s;
+    animation-name: transformToCloseButton-third-off;
+    animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */ }
+
+  @-webkit-keyframes slideDown {
+    0% {
+      top: -300px; }
+    100% {
+      top: 60px; } }
+  @-moz-keyframes slideDown {
+    0% {
+      top: -300px; }
+    100% {
+      top: 60px; } }
+  @-ms-keyframes slideDown {
+    0% {
+      top: -300px; }
+    100% {
+      top: 60px; } }
+  @-o-keyframes slideDown {
+    0% {
+      top: -300px; }
+    100% {
+      top: 60px; } }
+  @keyframes slideDown {
+    0% {
+      top: -300px; }
+    100% {
+      top: 60px; } }
+  @-webkit-keyframes slideUp {
+    0% {
+      top: 60px; }
+    100% {
+      top: -300px; } }
+  @-moz-keyframes slideUp {
+    0% {
+      top: 60px; }
+    100% {
+      top: -300px; } }
+  @-ms-keyframes slideUp {
+    0% {
+      top: 60px; }
+    100% {
+      top: -300px; } }
+  @-o-keyframes slideUp {
+    0% {
+      top: 60px; }
+    100% {
+      top: -300px; } }
+  @keyframes slideUp {
+    0% {
+      top: 60px; }
+    100% {
+      top: -300px; } }
+  .slidedown {
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-name: slideDown;
+    -webkit-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 0s;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-name: slideDown;
+    -moz-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 0s;
+    -o-animation-duration: 0.2s;
+    -o-animation-name: slideDown;
+    -o-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    animation-delay: 0s;
+    animation-duration: 0.2s;
+    animation-name: slideDown;
+    animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */ }
+
+  .slideup {
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-name: slideUp;
+    -webkit-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 0s;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-name: slideUp;
+    -moz-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 0s;
+    -o-animation-duration: 0.2s;
+    -o-animation-name: slideUp;
+    -o-animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */
+    animation-delay: 0s;
+    animation-duration: 0.2s;
+    animation-name: slideUp;
+    animation-fill-mode: forwards;
+    /* this prevents the animation from restarting! */ } }
+/*--------------------------------
+    					default
+--------------------------------*/
+@-webkit-keyframes workSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #097054; }
+  100% {
+    background-color: #097054;
+    border-bottom-color: #11ce9b; } }
+@-moz-keyframes workSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #097054; }
+  100% {
+    background-color: #097054;
+    border-bottom-color: #11ce9b; } }
+@-ms-keyframes workSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #097054; }
+  100% {
+    background-color: #097054;
+    border-bottom-color: #11ce9b; } }
+@-o-keyframes workSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #097054; }
+  100% {
+    background-color: #097054;
+    border-bottom-color: #11ce9b; } }
+@keyframes workSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #097054; }
+  100% {
+    background-color: #097054;
+    border-bottom-color: #11ce9b; } }
+@-webkit-keyframes workHoverToSimple {
+  0% {
+    background-color: #097054;
+    border-bottom-color: #11ce9b; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #097054; } }
+@-moz-keyframes workHoverToSimple {
+  0% {
+    background-color: #097054;
+    border-bottom-color: #11ce9b; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #097054; } }
+@-ms-keyframes workHoverToSimple {
+  0% {
+    background-color: #097054;
+    border-bottom-color: #11ce9b; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #097054; } }
+@-o-keyframes workHoverToSimple {
+  0% {
+    background-color: #097054;
+    border-bottom-color: #11ce9b; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #097054; } }
+@keyframes workHoverToSimple {
+  0% {
+    background-color: #097054;
+    border-bottom-color: #11ce9b; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #097054; } }
+.workhover {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: workSimpleToHover;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-name: workSimpleToHover;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0s;
+  -o-animation-duration: 0.2s;
+  -o-animation-name: workSimpleToHover;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.2s;
+  animation-name: workSimpleToHover;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+.worksimple {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: workHoverToSimple;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-name: workHoverToSimple;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0s;
+  -o-animation-duration: 0.2s;
+  -o-animation-name: workHoverToSimple;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.2s;
+  animation-name: workHoverToSimple;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+@-webkit-keyframes companySimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FFDE00; }
+  100% {
+    background-color: #FFDE00;
+    border-bottom-color: #ffeb66; } }
+@-moz-keyframes companySimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FFDE00; }
+  100% {
+    background-color: #FFDE00;
+    border-bottom-color: #ffeb66; } }
+@-ms-keyframes companySimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FFDE00; }
+  100% {
+    background-color: #FFDE00;
+    border-bottom-color: #ffeb66; } }
+@-o-keyframes companySimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FFDE00; }
+  100% {
+    background-color: #FFDE00;
+    border-bottom-color: #ffeb66; } }
+@keyframes companySimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FFDE00; }
+  100% {
+    background-color: #FFDE00;
+    border-bottom-color: #ffeb66; } }
+@-webkit-keyframes companyHoverToSimple {
+  0% {
+    background-color: #FFDE00;
+    border-bottom-color: #ffeb66; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FFDE00; } }
+@-moz-keyframes companyHoverToSimple {
+  0% {
+    background-color: #FFDE00;
+    border-bottom-color: #ffeb66; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FFDE00; } }
+@-ms-keyframes companyHoverToSimple {
+  0% {
+    background-color: #FFDE00;
+    border-bottom-color: #ffeb66; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FFDE00; } }
+@-o-keyframes companyHoverToSimple {
+  0% {
+    background-color: #FFDE00;
+    border-bottom-color: #ffeb66; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FFDE00; } }
+@keyframes companyHoverToSimple {
+  0% {
+    background-color: #FFDE00;
+    border-bottom-color: #ffeb66; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FFDE00; } }
+.companyhover {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: companySimpleToHover;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-name: companySimpleToHover;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0s;
+  -o-animation-duration: 0.2s;
+  -o-animation-name: companySimpleToHover;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.2s;
+  animation-name: companySimpleToHover;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+.companysimple {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: companyHoverToSimple;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-name: companyHoverToSimple;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0s;
+  -o-animation-duration: 0.2s;
+  -o-animation-name: companyHoverToSimple;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.2s;
+  animation-name: companyHoverToSimple;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+@-webkit-keyframes carrersSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FF9900; }
+  100% {
+    background-color: #FF9900;
+    border-bottom-color: #ffc266; } }
+@-moz-keyframes carrersSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FF9900; }
+  100% {
+    background-color: #FF9900;
+    border-bottom-color: #ffc266; } }
+@-ms-keyframes carrersSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FF9900; }
+  100% {
+    background-color: #FF9900;
+    border-bottom-color: #ffc266; } }
+@-o-keyframes carrersSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FF9900; }
+  100% {
+    background-color: #FF9900;
+    border-bottom-color: #ffc266; } }
+@keyframes carrersSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FF9900; }
+  100% {
+    background-color: #FF9900;
+    border-bottom-color: #ffc266; } }
+@-webkit-keyframes carrersHoverToSimple {
+  0% {
+    background-color: #FF9900;
+    border-bottom-color: #ffc266; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FF9900; } }
+@-moz-keyframes carrersHoverToSimple {
+  0% {
+    background-color: #FF9900;
+    border-bottom-color: #ffc266; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FF9900; } }
+@-ms-keyframes carrersHoverToSimple {
+  0% {
+    background-color: #FF9900;
+    border-bottom-color: #ffc266; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FF9900; } }
+@-o-keyframes carrersHoverToSimple {
+  0% {
+    background-color: #FF9900;
+    border-bottom-color: #ffc266; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FF9900; } }
+@keyframes carrersHoverToSimple {
+  0% {
+    background-color: #FF9900;
+    border-bottom-color: #ffc266; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #FF9900; } }
+.carrershover {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: carrersSimpleToHover;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-name: carrersSimpleToHover;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0s;
+  -o-animation-duration: 0.2s;
+  -o-animation-name: carrersSimpleToHover;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.2s;
+  animation-name: carrersSimpleToHover;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+.carrerssimple {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: carrersHoverToSimple;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-name: carrersHoverToSimple;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0s;
+  -o-animation-duration: 0.2s;
+  -o-animation-name: carrersHoverToSimple;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.2s;
+  animation-name: carrersHoverToSimple;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+@-webkit-keyframes writingSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #217C7E; }
+  100% {
+    background-color: #217C7E;
+    border-bottom-color: #3ac8cb; } }
+@-moz-keyframes writingSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #217C7E; }
+  100% {
+    background-color: #217C7E;
+    border-bottom-color: #3ac8cb; } }
+@-ms-keyframes writingSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #217C7E; }
+  100% {
+    background-color: #217C7E;
+    border-bottom-color: #3ac8cb; } }
+@-o-keyframes writingSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #217C7E; }
+  100% {
+    background-color: #217C7E;
+    border-bottom-color: #3ac8cb; } }
+@keyframes writingSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #217C7E; }
+  100% {
+    background-color: #217C7E;
+    border-bottom-color: #3ac8cb; } }
+@-webkit-keyframes writingHoverToSimple {
+  0% {
+    background-color: #217C7E;
+    border-bottom-color: #3ac8cb; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #217C7E; } }
+@-moz-keyframes writingHoverToSimple {
+  0% {
+    background-color: #217C7E;
+    border-bottom-color: #3ac8cb; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #217C7E; } }
+@-ms-keyframes writingHoverToSimple {
+  0% {
+    background-color: #217C7E;
+    border-bottom-color: #3ac8cb; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #217C7E; } }
+@-o-keyframes writingHoverToSimple {
+  0% {
+    background-color: #217C7E;
+    border-bottom-color: #3ac8cb; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #217C7E; } }
+@keyframes writingHoverToSimple {
+  0% {
+    background-color: #217C7E;
+    border-bottom-color: #3ac8cb; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #217C7E; } }
+.writinghover {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: writingSimpleToHover;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-name: writingSimpleToHover;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0s;
+  -o-animation-duration: 0.2s;
+  -o-animation-name: writingSimpleToHover;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.2s;
+  animation-name: writingSimpleToHover;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+.writingsimple {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: writingHoverToSimple;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-name: writingHoverToSimple;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0s;
+  -o-animation-duration: 0.2s;
+  -o-animation-name: writingHoverToSimple;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.2s;
+  animation-name: writingHoverToSimple;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+@-webkit-keyframes contactSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #9A3334; }
+  100% {
+    background-color: #9A3334;
+    border-bottom-color: #cc6767; } }
+@-moz-keyframes contactSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #9A3334; }
+  100% {
+    background-color: #9A3334;
+    border-bottom-color: #cc6767; } }
+@-ms-keyframes contactSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #9A3334; }
+  100% {
+    background-color: #9A3334;
+    border-bottom-color: #cc6767; } }
+@-o-keyframes contactSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #9A3334; }
+  100% {
+    background-color: #9A3334;
+    border-bottom-color: #cc6767; } }
+@keyframes contactSimpleToHover {
+  0% {
+    background-color: #1a1a1a;
+    border-bottom-color: #9A3334; }
+  100% {
+    background-color: #9A3334;
+    border-bottom-color: #cc6767; } }
+@-webkit-keyframes contactHoverToSimple {
+  0% {
+    background-color: #9A3334;
+    border-bottom-color: #cc6767; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #9A3334; } }
+@-moz-keyframes contactHoverToSimple {
+  0% {
+    background-color: #9A3334;
+    border-bottom-color: #cc6767; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #9A3334; } }
+@-ms-keyframes contactHoverToSimple {
+  0% {
+    background-color: #9A3334;
+    border-bottom-color: #cc6767; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #9A3334; } }
+@-o-keyframes contactHoverToSimple {
+  0% {
+    background-color: #9A3334;
+    border-bottom-color: #cc6767; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #9A3334; } }
+@keyframes contactHoverToSimple {
+  0% {
+    background-color: #9A3334;
+    border-bottom-color: #cc6767; }
+  100% {
+    background-color: #1a1a1a;
+    border-bottom-color: #9A3334; } }
+.contacthover {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: contactSimpleToHover;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-name: contactSimpleToHover;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0s;
+  -o-animation-duration: 0.2s;
+  -o-animation-name: contactSimpleToHover;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.2s;
+  animation-name: contactSimpleToHover;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+.contactsimple {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: contactHoverToSimple;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-name: contactHoverToSimple;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0s;
+  -o-animation-duration: 0.2s;
+  -o-animation-name: contactHoverToSimple;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.2s;
+  animation-name: contactHoverToSimple;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+/*--------------------------------
+             desktop
+--------------------------------*/
+@media screen and (min-width: 768px) {
+  .logo-opener-container {
+    display: none; }
+
+  .navbar {
+    width: 100%;
+    position: fixed;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    height: 60px;
+    padding: 0;
+    z-index: 500; }
+
+  .navbar-text-holder {
+    z-index: 500;
+    width: 101%;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    margin: 0;
+    padding: 0; }
+    .navbar-text-holder ul {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+    .navbar-text-holder li {
+      list-style-type: none;
+      display: inline-block;
+      width: 18.4%;
+      font-size: 1.4em;
+      margin: 0;
+      border-right: 1px solid black;
+      border-left: 1px solid #323232;
+      border-bottom: 3px solid black;
+      height: 60px;
+      line-height: 60px;
+      vertical-align: middle;
+      text-align: center; }
+    .navbar-text-holder a, .navbar-text-holder a:hover, .navbar-text-holder a:active, .navbar-text-holder a:visited {
+      color: white; }
+
+  #home {
+    width: 8%;
+    border-bottom-color: #0080ff;
+    border-left: 0;
+    background-color: #04303d;
+    font-size: 3em; }
+
+  #work {
+    background-color: #1a1a1a;
+    border-bottom-color: #097054; }
+
+  #company {
+    background-color: #1a1a1a;
+    border-bottom-color: #FFDE00; }
+
+  #carrers {
+    background-color: #1a1a1a;
+    border-bottom-color: #FF9900; }
+
+  #writing {
+    background-color: #1a1a1a;
+    border-bottom-color: #217C7E; }
+
+  #contact {
+    background-color: #1a1a1a;
+    border-bottom-color: #9A3334; } }
+/*--------------------------------
+             tablet
+--------------------------------*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .logo-opener-container {
+    display: none; }
+
+  .navbar {
+    width: 100%;
+    position: fixed;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    height: 60px;
+    padding: 0;
+    z-index: 500; }
+
+  .navbar-text-holder {
+    z-index: 500;
+    width: 101%;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    margin: 0;
+    padding: 0; }
+    .navbar-text-holder ul {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+    .navbar-text-holder li {
+      display: inline-block;
+      width: 18.4%;
+      font-size: 1em;
+      margin: 0 -2px;
+      border-right: 1px solid black;
+      border-left: 1px solid #323232;
+      border-bottom: 3px solid black;
+      height: 60px;
+      line-height: 60px;
+      vertical-align: middle;
+      text-align: center; }
+    .navbar-text-holder a, .navbar-text-holder a:hover, .navbar-text-holder a:active, .navbar-text-holder a:visited {
+      color: white; }
+
+  #home {
+    width: 8%;
+    border-bottom-color: #0080ff;
+    border-left: 0;
+    background-color: #04303d;
+    font-size: 2em; }
+
+  #work {
+    background-color: #1a1a1a;
+    border-bottom-color: #097054; }
+
+  #company {
+    background-color: #1a1a1a;
+    border-bottom-color: #FFDE00; }
+
+  #carrers {
+    background-color: #1a1a1a;
+    border-bottom-color: #FF9900; }
+
+  #writing {
+    background-color: #1a1a1a;
+    border-bottom-color: #217C7E; }
+
+  #contact {
+    background-color: #1a1a1a;
+    border-bottom-color: #9A3334; } }
+body {
+  background-color: #272727;
+  background-size: 1366px auto; }
+
+/*--------------------------------
+           	MAIN PAGE
+--------------------------------*/
+.main-page {
+  background-image: url(../pics/elsooldal-bg.jpg);
+  background-position: center;
+  width: 100%; }
+
+.slogan {
+  font-family: 'Comfortaa', cursive;
+  color: brown;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  vertical-align: middle;
+  background-color: transparent;
+  top: 80px; }
+  @media only screen and (max-width: 480px) {
+    .slogan {
+      font-size: 2em; } }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .slogan {
+      font-size: 3em; } }
+  @media screen and (min-width: 768px) {
+    .slogan {
+      font-size: 4em; } }
+
+.learnmore {
+  font-family: 'Comfortaa', cursive;
+  color: white;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  background-color: transparent; }
+  @media only screen and (max-width: 480px) {
+    .learnmore {
+      font-size: 1em; } }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .learnmore {
+      font-size: 1.25em; } }
+  @media screen and (min-width: 768px) {
+    .learnmore {
+      font-size: 1.5em; } }
+  .learnmore a, .learnmore a:hover, .learnmore a:active, .learnmore a:visited {
+    text-decoration: none;
+    color: white; }
+  .learnmore a:hover {
+    color: black; }
+  .learnmore span {
+    margin-left: 5px; }
+
+.arrow-holder {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 450; }
+
+.arrow {
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  border: 1px solid white; }
+
+#facebook {
+  background-color: rgba(255, 255, 255, 0.3);
+  left: 70%;
+  position: relative;
+  z-index: 5;
+  float: left; }
+
+#facebook:hover {
+  background-color: #3b5998; }
+
+#twitter {
+  background-color: rgba(255, 255, 255, 0.3);
+  right: 70%;
+  position: relative;
+  z-index: 6; }
+
+#twitter:hover {
+  background-color: #0084b4; }
+
+#instagram {
+  background-color: rgba(255, 255, 255, 0.3);
+  bottom: 30%;
+  position: relative;
+  z-index: 7; }
+
+#instagram:hover {
+  background-color: #517fa4; }
+
+#googleplus {
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  bottom: 270%;
+  z-index: 8; }
+
+#googleplus:hover {
+  background-color: #d34836; }
+
+.social-container {
+  width: 20px;
+  height: 40px;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: relative;
+  font-size: 2em;
+  color: white; }
+
+#facebook-container {
+  top: 55px;
+  left: 15px; }
+
+#twitter-container {
+  top: -65px;
+  left: -5px; }
+
+#instagram-container {
+  top: 3px;
+  left: 10px; }
+
+#googleplus-container {
+  top: 60px;
+  left: 70px; }
+
+/*--------------------------------
+             PAGES
+--------------------------------*/
+.page {
+  height: 1000px;
+  background-color: #F5FAFA;
+  padding: 20px;
+  position: relative; }
+
+.row-container {
+  width: 95%;
+  height: 800px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative; }
+
+.row {
+  height: 1000px;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  background-color: #1a4164; }
+
+@media screen and (min-width: 768px) {
+  .firstrow {
+    position: relative;
+    float: left; }
+
+  .secondrow {
+    position: relative;
+    float: right; }
+
+  .page-title {
+    position: relative;
+    margin: 30px 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 3em;
+    color: white; }
+
+  .row {
+    width: 48%;
+    display: inline-block;
+    position: relative;
+    webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4); } }
+
+/*# sourceMappingURL=elsooldal.css.map */
